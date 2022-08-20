@@ -8,10 +8,24 @@ public class UseCollection {
         // Create collection
         Collection<User> user = new ArrayList<User>();
 
-        // Fill fields
-        user.add(new User("Michelle", "electrochemically4", 19));
+        // Create first user instance
+        User user1 = new User("Michelle", "electrochemically4", 19);
+
+        // Fill user collection positions
+        user.add(user1);
         user.add(new User("Nuria", "palacios_nuri", 19));
 
+        // Iterate all users
+        user.forEach(name -> {
+            System.out.println(String.format("Name: %s, username: %s, age: %s", name.name, name.username, name.age));
+        });
+
+        System.out.println("First item will be deleted.");
+
+        // Remove item
+        user.remove(user1);
+
+        // Iterate all users
         user.forEach(name -> {
             System.out.println(String.format("Name: %s, username: %s, age: %s", name.name, name.username, name.age));
         });

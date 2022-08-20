@@ -8,8 +8,4 @@ public class User {
         this.username = username;
         this.age = age;
     }
-
-    public void show() {
-        System.out.println("Customer information: ");
-    }
 }
