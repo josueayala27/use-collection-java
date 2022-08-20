@@ -11,7 +11,7 @@ public class UseCollection {
         // Create first user instance
         User user1 = new User("Michelle", "electrochemically4", 19);
 
-        // Fill user collection positions
+        // Fill user collection positions (both User class ways)
         user.add(user1);
         user.add(new User("Nuria", "palacios_nuri", 19));
 
